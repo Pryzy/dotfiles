@@ -31,6 +31,12 @@ set relativenumber
 " Show last command
 set showcmd
 
+" Highlight search result
+set hlsearch
+
+" Turn off highligh search result
+nnoremap <C-l> :nohlsearch<Bar>:echo<CR>
+
 " Set path for searching
 set path+=**
 
