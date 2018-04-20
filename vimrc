@@ -20,6 +20,10 @@ filetype plugin indent on
 syntax on
 colorscheme molokai
 
+" Airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
 " Tab = 4 spaces and read Tab as 4 spaces
 set expandtab
 set shiftwidth=2
