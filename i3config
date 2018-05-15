@@ -33,7 +33,7 @@ new_window pixel 1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -72,8 +72,9 @@ bindsym $mod+Shift+Right move right
 # split in horizontal orientation
 #bindsym $mod+b split h
 
-# split orientation toggle
-bindsym $mod+v split toggle
+# split orientation
+bindsym $mod+v split vertical
+bindsym $mod+u split horizontal
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -189,5 +190,6 @@ focus_follows_mouse no
 
 # Start applets
 exec --no-startup-id nm-applet &
-exec --no-startup-id feh --bg-scale ~/Obrazy/Cat.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/Wlp.jpg
+exec --no-startup-id unclutter -idle 2.0 -root
 

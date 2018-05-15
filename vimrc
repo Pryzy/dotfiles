@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox' 
@@ -31,6 +32,9 @@ set softtabstop=2
 
 " Show relative number
 set relativenumber
+
+" Show cursorline
+set cursorline
 
 " Show last command
 set showcmd
