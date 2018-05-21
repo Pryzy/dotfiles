@@ -38,7 +38,6 @@ let g:airline_powerline_fonts = 1
   " Using 'CTRL-spacebar' then a search type makes the vim window
   " split horizontally, with search result displayed in
   " the new window.
-  
   nmap <C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>
@@ -50,7 +49,6 @@ let g:airline_powerline_fonts = 1
   
   " Hitting CTRL-space *twice* before the search type does a vertical
   " split instead of a horizontal one
-  
   nmap <C-@><C-@>s
   	\:vert scs find s <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@><C-@>g
