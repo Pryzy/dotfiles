@@ -69,8 +69,8 @@ let g:airline_powerline_fonts = 1
 
 " Tab = 4 spaces and read Tab as 4 spaces
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " Show relative number
 set relativenumber
