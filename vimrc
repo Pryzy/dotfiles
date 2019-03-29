@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'taylor/vim-zoomwin'
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
 Plugin 'morhetz/gruvbox' 
@@ -38,6 +39,7 @@ let g:airline_powerline_fonts = 1
   " Using 'CTRL-spacebar' then a search type makes the vim window
   " split horizontally, with search result displayed in
   " the new window.
+  
   nmap <C-@>s :scs find s <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@>g :scs find g <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@>c :scs find c <C-R>=expand("<cword>")<CR><CR>
@@ -49,6 +51,7 @@ let g:airline_powerline_fonts = 1
   
   " Hitting CTRL-space *twice* before the search type does a vertical
   " split instead of a horizontal one
+  
   nmap <C-@><C-@>s
   	\:vert scs find s <C-R>=expand("<cword>")<CR><CR>
   nmap <C-@><C-@>g
@@ -72,8 +75,16 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" Show relative number
-set relativenumber
+" For Vim 8.0 fix backspace
+set backspace=indent,eol,start
+
+" Show relative number + absolute number
+set number
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained * set relativenumber
+  autocmd BufLeave,FocusLost   * set norelativenumber
+augroup END
 
 " Show cursorline
 set cursorline
