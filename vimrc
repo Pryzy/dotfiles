@@ -108,6 +108,9 @@ set wildmenu
 " Allow mouse operation
 set mouse=a 
 
+" Set column color 80
+set colorcolumn=80
+
 " Change leader key to -
 let mapleader="-"
 
