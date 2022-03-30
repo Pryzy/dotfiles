@@ -25,7 +25,7 @@ colorscheme molokai
 
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " Cscope setup
   nmap <C-_>s :cs find s <C-R>=expand("<cword>")<CR><CR>
