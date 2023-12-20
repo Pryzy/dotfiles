@@ -1,4 +1,7 @@
 #!/bin/bash
 
 ln ./gitconfig ~/.gitconfig
-ln ./.tmux.conf ~/.tmux.conf
+
+# Install Tmux
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln "./.tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
