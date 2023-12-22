@@ -1,5 +1,5 @@
 # dotfiles
-My dotfiles for i3, vim, tmux, bashrc etc.
+My dotfiles for nvim, tmux
 
 How to install:
-Just execute ./createLinks.sh to link dotfile files with everything else.
+Just execute ./createLinks.sh to do its magic
