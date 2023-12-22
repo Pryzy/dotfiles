@@ -43,8 +43,24 @@ return require('packer').startup(function(use)
 	  vim.keymap.set('n', "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
 	  vim.keymap.set('n', "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
 	  vim.keymap.set('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
-
   end
-}
+  }
 
+
+  use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v3.x',
+	  requires = {
+		  --- Uncomment these if you want to manage LSP servers from neovim
+		  {'williamboman/mason.nvim'},
+		  {'williamboman/mason-lspconfig.nvim'},
+
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},
+		  {'hrsh7th/cmp-nvim-lsp'},
+		  {'L3MON4D3/LuaSnip'},
+	  }
+  }
 end)
