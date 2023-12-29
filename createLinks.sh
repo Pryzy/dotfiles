@@ -3,6 +3,7 @@
 ln ./gitconfig ~/.gitconfig
 
 # Install Tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -s $(pwd)/.tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
 
