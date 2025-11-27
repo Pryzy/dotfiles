@@ -2,7 +2,7 @@
 	name = Piotr Ryzynski
 	email = p.ryzynski@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 
 [alias]
         co = checkout
@@ -27,13 +27,15 @@
         lg = !"git lg1"
 
 [diff]
-        tool=vimdiff
+        tool="nvim -d"
 [difftool]
         prompt=false
 
 [merge]
-        tool=vimdiff
+        tool="nvim -d"
 [mergetool]
         prompt=false
 [push]
         default = simple
+[credential]
+	helper = store
